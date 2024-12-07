@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Singers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: "Outfit", sans-serif;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <main class="w-full min-h-screen flex flex-col" id="mainslider">
+        <section class="container mx-auto px-4 py-10 max-w-7xl">
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-8">
+                <h1 class="text-3xl font-semibold">Discover Your Favorite Personality</h1>
+                <p class="text-sm text-gray-600 cursor-pointer hover:text-gray-900">Exit</p>
+            </div>
+
+            <!-- Carousel -->
+            <div class="carousel-container flex gap-4 overflow-hidden px-4 py-16" id="containerslide">
+                <!-- Sankalpa Dahal Card -->
+                <div class="carousel-item flex-shrink-0 w-[280px] bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <div class="relative h-48">
+                        <img src="https://www.sankalpadahal.info.np/_next/image?url=%2Fportfolioimage%2F5one.jpg&w=1200&q=75"
+                            alt="Art" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 bg-purple-50">
+                        <h3 class="text-xl font-semibold mb-2">Sankalpa Dahal</h3>
+                        <p class="text-gray-600 text-sm mb-4">React Front-End Intern Developer Working at Code Himalaya.</p>
+                        <button
+                            class="w-full py-3 px-4 bg-purple-200 text-gray-800 rounded-full font-medium hover:bg-purple-300 transition-colors">
+                            Add to Interests +
+                        </button>
+                    </div>
+                </div>
+                <!-- Mark Zuckerberg Card -->
+                <div class="carousel-item flex-shrink-0 w-[280px] bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <div class="relative h-48">
+                        <img src="https://cdn.britannica.com/99/236599-050-1199AD2C/Mark-Zuckerberg-2019.jpg"
+                            alt="Mark" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 bg-purple-50">
+                        <h3 class="text-xl font-semibold mb-2">Mark Zuckerberg</h3>
+                        <p class="text-gray-600 text-sm mb-4">Founder & CEO at Facebook (Now Called Meta).</p>
+                        <button
+                            class="w-full py-3 px-4 bg-purple-200 text-gray-800 rounded-full font-medium hover:bg-purple-300 transition-colors">
+                            Add to Interests +
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Larry Page Card -->
+                <div class="carousel-item flex-shrink-0 w-[280px] bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <div class="relative h-48">
+                        <img src="https://fortune.com/img-assets/wp-content/uploads/2024/03/GettyImages-495426754-e1711479067211.jpg"
+                            alt="Larry" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 bg-purple-50">
+                        <h3 class="text-xl font-semibold mb-2">Larry Page</h3>
+                        <p class="text-gray-600 text-sm mb-4">Lawrence Edward Page is best known for co-founding Google.</p>
+                        <button
+                            class="w-full py-3 px-4 bg-purple-200 text-gray-800 rounded-full font-medium hover:bg-purple-300 transition-colors">
+                            Add to Interests +
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Elon Musk Card -->
+                <div class="carousel-item flex-shrink-0 w-[280px] bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <div class="relative h-48">
+                        <img src="https://imageio.forbes.com/specials-images/imageserve/674a149e857f19686e60870e/The-New-York-Times-Hosts-Its-Annual-DealBook-Summit/960x0.jpg?format=jpg&width=960"
+                            alt="Elon" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 bg-purple-50">
+                        <h3 class="text-xl font-semibold mb-2">Elon Musk</h3>
+                        <p class="text-gray-600 text-sm mb-4">Elon Musk is a businessman known for building futurist projects.</p>
+                        <button
+                            class="w-full py-3 px-4 bg-purple-200 text-gray-800 rounded-full font-medium hover:bg-purple-300 transition-colors">
+                            Add to Interests +
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sankalpa Dahal Card -->
+                <div class="carousel-item flex-shrink-0 w-[280px] bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <div class="relative h-48">
+                        <img src="https://www.sankalpadahal.info.np/_next/image?url=%2Fportfolioimage%2F5one.jpg&w=1200&q=75"
+                            alt="Art" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 bg-purple-50">
+                        <h3 class="text-xl font-semibold mb-2">Sankalpa Dahal</h3>
+                        <p class="text-gray-600 text-sm mb-4">React Front-End Intern Developer Working at Code Himalaya.</p>
+                        <button
+                            class="w-full py-3 px-4 bg-purple-200 text-gray-800 rounded-full font-medium hover:bg-purple-300 transition-colors">
+                            Add to Interests +
+                        </button>
+                    </div>
+                </div>
+                <!-- Mark Zuckerberg Card -->
+                <div class="carousel-item flex-shrink-0 w-[280px] bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <div class="relative h-48">
+                        <img src="https://cdn.britannica.com/99/236599-050-1199AD2C/Mark-Zuckerberg-2019.jpg"
+                            alt="Mark" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 bg-purple-50">
+                        <h3 class="text-xl font-semibold mb-2">Mark Zuckerberg</h3>
+                        <p class="text-gray-600 text-sm mb-4">Founder & CEO at Facebook (Now Called Meta).</p>
+                        <button
+                            class="w-full py-3 px-4 bg-purple-200 text-gray-800 rounded-full font-medium hover:bg-purple-300 transition-colors">
+                            Add to Interests +
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Larry Page Card -->
+                <div class="carousel-item flex-shrink-0 w-[280px] bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <div class="relative h-48">
+                        <img src="https://fortune.com/img-assets/wp-content/uploads/2024/03/GettyImages-495426754-e1711479067211.jpg"
+                            alt="Larry" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 bg-purple-50">
+                        <h3 class="text-xl font-semibold mb-2">Larry Page</h3>
+                        <p class="text-gray-600 text-sm mb-4">Lawrence Edward Page is best known for co-founding Google.</p>
+                        <button
+                            class="w-full py-3 px-4 bg-purple-200 text-gray-800 rounded-full font-medium hover:bg-purple-300 transition-colors">
+                            Add to Interests +
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Elon Musk Card -->
+                <div class="carousel-item flex-shrink-0 w-[280px] bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <div class="relative h-48">
+                        <img src="https://imageio.forbes.com/specials-images/imageserve/674a149e857f19686e60870e/The-New-York-Times-Hosts-Its-Annual-DealBook-Summit/960x0.jpg?format=jpg&width=960"
+                            alt="Elon" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 bg-purple-50">
+                        <h3 class="text-xl font-semibold mb-2">Elon Musk</h3>
+                        <p class="text-gray-600 text-sm mb-4">Elon Musk is a businessman known for building futurist projects.</p>
+                        <button
+                            class="w-full py-3 px-4 bg-purple-200 text-gray-800 rounded-full font-medium hover:bg-purple-300 transition-colors">
+                            Add to Interests +
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Navigation -->
+        <div
+            class="flex fixed bg-blue-500 p-3 m-3 bottom-2 bg-white justify-between max-w-7xl w-full mx-auto py-3">
+            <button id="backbtn" class="py-2 px-5 bg-purple-200 text-gray-800 rounded-full font-medium hover:bg-purple-300 transition-colors">
+                Back
+            </button>
+            <button id="nextbtn" class="py-2 px-5 bg-purple-200 text-gray-800 rounded-full font-medium hover:bg-purple-300 transition-colors">
+                Next
+            </button>
+        </div>
+    </main>
+    <script>
+        const containerslide = document.getElementById('containerslide');
+        const backbtn = document.getElementById('backbtn');
+        const nextbtn = document.getElementById('nextbtn');
+
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            const slideWidth = containerslide.querySelector('.carousel-item').offsetWidth + 16; // Item width + gap
+            containerslide.scrollTo({
+                left: slideWidth * currentIndex,
+                behavior: 'smooth'
+            });
+        }
+
+        nextbtn.addEventListener('click', () => {
+            const totalSlides = containerslide.children.length;
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateCarousel();
+        });
+
+        backbtn.addEventListener('click', () => {
+            const totalSlides = containerslide.children.length;
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        });
+    </script>
+</body>
+
+</html>
